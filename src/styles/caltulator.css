@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*::after, *::before{
+    box-sizing: border-box;
+}
+:root {
+    --orange: rgb(238, 177, 64);
+    --hover-color: rgb(146, 111, 47);
+  }
+html{
+    font-size: 62.5%;
+}
+button{
+    outline: none;
+}
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    background: #3d4543;
+}
+*::selection {
+    background: var(--orange);
+    color: #333;
+}
+
+.calculator{
+    display: grid;
+    margin-top: 9rem;
+    grid-template-columns: repeat(4, 9rem);
+    grid-template-rows: minmax(8rem , auto) repeat(5, 8rem);
+    justify-content: center;
+}
+/* .calculator .title{
+    font-size: 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+} */
+.span-two{
+    grid-column: span 2;
+    
+}
+.output{
+    color: white;
+    grid-column: 1 / -1;;
+    background-color: rgb(36, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+
+
+}
+.output, .previous-operand{
+        color: rgba(255,255,255, .75);
+        font-size: 2rem;
+}
+.output, .current-operand{
+    color: white;
+    font-size: 3rem;
+}
+.calculator >button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    outline: none;
+    border: 1px solid rgb(234, 127, 149);
+    color: rgb(165, 30, 228);
+    font-weight: 700;
+}
+.calculator >button:hover{
+    background-color: rgb(234, 176, 189);
+}
+
+ 
